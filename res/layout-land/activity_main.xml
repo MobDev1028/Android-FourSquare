@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" 
+    android:weightSum="2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="264dp"
+            android:layout_height="257dp" />
+
+    </FrameLayout>
+
+    
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+     <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="OR SELECT FROM NEARBY PLACES"
+        android:textColor="#29a3c7" 
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        
+        android:paddingBottom="5dp"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#29a3c7"
+        
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:headerDividersEnabled="true" >"
+    </ListView>
+    
+</LinearLayout>
+   
+</LinearLayout>
